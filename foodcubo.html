@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Comic Sans MS" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonticons-free-fonticons.netdna-ssl.com/kits/349cfdf6/publications/93890/woff2.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script data-prerender="keep" async="" src="https://use.fortawesome.com/349cfdf6.js"></script>
+ <script>
+function myFunction(imgs) {
+var expandImg = document.getElementById("expandedImg");
+var imgText = document.getElementById("imgtext");
+expandImg.src = imgs.src;
+imgText.innerHTML = imgs.alt;
+expandImg.parentElement.style.display = "block";
+}
+</script>
+<title>Home</title>
+ <style>
+   p{
+     font-family:"Comic Sans MS";
+   }
+   * {box-sizing: border-box;}
+
+   .col-sm-5{
+  position: relative;
+}
+
+.image {
+  display: block;
+  width:100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 80%;
+  transition: 1s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.col-sm-5:hover .overlay {
+  opacity: 1;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 2;
+}
+
+/* Clear floats after the columns */
+.contain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.contain {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 55px;
+  cursor: pointer;
+}
+ </style>
+ </head>
+ <body>
+   <div class="container">
+     <div class="row"style="margin-top:10%">
+       <div class="shadow-lg p-3 mb-5 bg-white rounded"style="width:100%">
+           <div class="col-sm-1"></div>
+           <div class="col-sm-5">
+           <img src="logo.png" alt=""style="width:80%;height:80%">
+           <div class="overlay"><p atyle="color:pink">Welcome to Foodub</p></div>
+           </div>
+           <div class="col-sm-5"style="margin-top:5%">
+           <p style="font-size:4vw;color:#26F2D0">FOODUB</p>
+           <p style="font-size:2.5vw">A Patna Based Foodtech STartup</p>
+           </div>
+       </div>
+     </div>
+     <div class="row"style="margin-top:1%">
+       <div class="shadow-lg p-3 mb-5 bg-white rounded">
+         <div class="card-body">
+           <div class="column">
+            <img src="fd1.png" alt="" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+           <img src="fd2.png" alt="" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+           <img src="fd3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+         </div>
+         <div class="column">
+          <img src="fd1.png" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        </div>
+       </div>
+       <div class="shadow-lg p-3 mb-5 bg-white rounded">
+       <div class="contain">
+         <span onclick="this.parentElement.style.display='none'" class="closebtn"style="color:black">&times;</span>
+         <img id="expandedImg" style="width:100%">
+         <div id="imgtext"></div>
+       </div>
+     </div>
+     </div>
+     <div class="row">
+       <div class="col-sm-1"></div>
+       <div class="col-sm-4">
+         <div class="row"style="color:#F61D83">
+           <i class="fa fa-circle"style="padding-top:1%"></i><p style="font-size:1.5vw">VEG</p>
+           <div class="col-sm-2"></div>
+           <div class="col-sm-10">
+            <div class="row"><p style="font-size:1.5vw">1)Paneer</p></div>
+            <div class="row"><p style="font-size:1.5vw">2)Paneer</p></div>
+            <div class="row"><p style="font-size:1.5vw">3)Paneer</p></div>
+            <div class="row"><p style="font-size:1.5vw">4)Paneer</p></div>
+            <div class="row"><p style="font-size:1.5vw">5)Paneer</p></div>
+           </div>
+         </div>
+       </div>
+       <div class="col-sm-1"></div>
+       <div class="col-sm-4">
+         <div class="row"style="color:#F61D83">
+           <i class="fa fa-circle"style="padding-top:1%"></i><p style="font-size:1.5vw">NON-VEG</p>
+           <div class="col-sm-2"></div>
+           <div class="col-sm-10">
+            <div class="row"><p style="font-size:1.5vw">1)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">2)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">3)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">4)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">5)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">6)Chicken</p></div>
+            <div class="row"><p style="font-size:1.5vw">7)Chicken</p></div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="row" style="margin-top:5%;margin-bottom:5%">
+       <p style="font-size:2vw">Thank you for visiting our page.........</p>
+     </div>
+   </div>
+
+ </body>
+ </html>﻿
